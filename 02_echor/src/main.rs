@@ -2,7 +2,7 @@ use clap::Parser;
 
 #[derive(Debug, Parser)]
 #[command(author, version, about)]
-/// Rust version of 'echo'
+/// Rust version of `echo`
 struct Args {
     /// Input text
     #[arg(required(true))]
@@ -12,6 +12,7 @@ struct Args {
     #[arg(short('n'))]
     omit_newline: bool,
 }
+
 fn main() {
     let args = Args::parse();
     print!(
